@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis</title>
+  <link rel="icon" href="favicon.ico">
+<style>
+  html {
+  background: linear-gradient(to right,#4C3F91,#9145B6,#B958A5,#FF5677);
+    background-size: cover;
+}
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a.active {
+    background-color:gray;
+    opacity: 0.5;
+    color: white;
+  }
+  li a:hover:not(.active) {
+  background-color: gray;
+  opacity: 0.5;
+  color: white;
+}
+h2{
+  padding-bottom: 5px;
+  font-size: 35px;
+  color:lightgreen;
+}
+.submit{
+  border-radius: 25px;
+  background: orange;
+  padding:5px;
+}
+ul li a{
+    font-size: 25px;
+}
+</style>
+</head>
+<body onload='document.form1.text1.focus()'>
+  <h1 style="color: white;text-align: center;">ONLINE DOCTOR CONSULTANCY</h1>
+
+<ul>
+  <li><a class="levels.html" href="levels.html" style="color: white;" >Diabetic Level</a></li>
+  <li><a href="active"style="color: white;" >Problem of the Patient</a></li>
+  <li><a href="call.html"style="color: white;" >Call Doctor</a></li>
+  <li><a href="feedback.html"style="color: white;" >Feedback</a></li>
+</ul>
+<div style="margin-left:30%;padding:30px 0px;height:10s0px;">
+<div class="mail" style="text-align: center;border: 5px solid yellow;padding:95px;border-radius: 20px;color:gray;width:40%;height:15%;color: white">
+<h2>Post your Problem</h2>
+<form name="form1" action="#">
+<ul>
+  <br>
+<li><input type='text' placeholder="Enter Your Problem" size="30" name='text1'/></li>
+<br>
+<li><input class="submit" type="submit" name="submit" value="Submit" onclick="alphanumeric(document.form1.text1)" /></li>
+
+</ul>
+</form>
+</div >
+
+<script>
+function alphanumeric(inputtxt)
+{
+var letters = /^[0-9a-zA-Z]+$/;
+if(inputtxt.value.match(letters))
+{
+alert('Problems has been noted:Any more write below');
+document.form1.text1.focus();
+return true;
+}
+else
+{
+alert('Please input alphanumeric characters only');
+return false;
+}
+}
+</script>
+   </div>
+
+</div>
+
+</body>
+</html>

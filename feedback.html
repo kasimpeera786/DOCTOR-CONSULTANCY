@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FeedBack</title>
+<link rel="stylesheet" href="./feedback.css">
+<link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+<h2>FEED BACK FORM</h2>
+
+<div class="container">
+
+  <form action="thanks.html">
+
+    <div class="row">
+
+      <div class="col-25">
+
+        <label for="fname">First Name</label>
+
+      </div>
+
+      <div class="col-75">
+
+        <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-25">
+
+        <label for="lname">Last Name</label>
+
+      </div>
+
+      <div class="col-75">
+
+        <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name" required>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-25">
+
+          <label for="email">Mail Id</label>
+
+        </div>
+
+        <div class="col-75">
+
+          <input type="email" id="email" name="mailid" placeholder="Enter Your Mail Id">
+
+        </div>
+
+      </div>
+
+    <div class="row">
+
+      <div class="col-25">
+
+        <label for="country">Country</label>
+
+      </div>
+
+      <div class="col-75">
+
+        <select id="country" name="country">
+
+            <option value="none">Select Country</option>
+
+          <option value="australia">Australia</option>
+
+          <option value="canada">Canada</option>
+
+          <option value="usa">USA</option>
+
+          <option value="russia">Russia</option>
+
+          <option value="japan">Japan</option>
+
+          <option value="india">India</option>
+
+          <option value="china">China</option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-25">
+
+        <label for="feed_back">Feed Back</label>
+
+      </div>
+
+      <div class="col-75">
+
+        <textarea id="subject" name="subject" placeholder="Write Your FeedBack..." style="height:200px"></textarea>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      <button onclick="window.location.href='submit.html'" type="button">Submit</button>
+
+
+
+
+    </div>
+
+  </form>
+
+</div>
+
+
+
+</body>
+
+</html>
